@@ -27,6 +27,7 @@ On the surrogate model:
 
 ```python
 perturbed = image + epsilon * sign(∇_image Loss(model(image), label))
+```
 
 These perturbed images are then used against the target model — even though no gradients or internal access is available for it.
 
